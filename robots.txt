@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /config/
+Sitemap: https://mesacompleta.com.br/sitemap.xml
