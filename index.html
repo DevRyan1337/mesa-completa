@@ -32,6 +32,7 @@
 
 
 </head>
+
 <body>
 
   <!-- Header -->
@@ -40,6 +41,34 @@
     <h1 class="title">MESA COMPLETA</h1>
     <p class="subtitle">Coffee break</p>
   </header>
+
+
+      <!-- Carrossel de Imagens -->
+  <section class="carousel">
+    <div class="carousel-container">
+      <div class="slide fade">
+        <img src="img/coffee.png" alt="Coffee Break decorado" loading="lazy">
+      </div>
+      <div class="slide fade">
+        <img src="img/cake.png" alt="Mesa de doces e salgados" loading="lazy">
+      </div>
+      <div class="slide fade">
+        <img src="img/sexta.png" alt="Buffet Mesa Completa" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Botões de navegação -->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <!-- Bolinhas de controle -->
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+
 
   <!-- Hero Section -->
   <section class="hero">
@@ -134,6 +163,65 @@
       document.querySelectorAll("img").forEach(img => img.loading = "lazy");
     });
   </script>
+
+
+  <script>
+let slideIndex = 0;
+let slideTimer;
+
+function showSlides() {
+  const slides = document.getElementsByClassName("slide");
+  const dots = document.getElementsByClassName("dot");
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) slideIndex = 1;
+
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+
+  slideTimer = setTimeout(showSlides, 4000); // muda a cada 4 segundos
+}
+
+function plusSlides(n) {
+  clearTimeout(slideTimer);
+  showManualSlide(slideIndex += n);
+}
+
+function currentSlide(n) {
+  clearTimeout(slideTimer);
+  showManualSlide(slideIndex = n);
+}
+
+function showManualSlide(n) {
+  const slides = document.getElementsByClassName("slide");
+  const dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) slideIndex = 1;
+  if (n < 1) slideIndex = slides.length;
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+
+  slideTimer = setTimeout(showSlides, 4000);
+}
+
+document.addEventListener("DOMContentLoaded", showSlides);
+</script>
 
 
 </body>
