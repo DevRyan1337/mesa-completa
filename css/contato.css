@@ -1,0 +1,42 @@
+@import url('style.css');
+
+/* ======== FORMULÁRIO DE CONTATO ======== */
+.contato {
+  max-width: 500px;
+  margin: 0 auto;
+  background: var(--branco);
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contato h2 {
+  color: var(--caramelo);
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.contato input,
+.contato textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #d8c3a5;
+  font-family: "Poppins", sans-serif;
+}
+
+.contato button {
+  background: var(--caramelo);
+  color: var(--branco);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contato button:hover {
+  background: var(--marrom-claro);
+}
