@@ -1,13 +1,13 @@
 const pacotes = [
-  { pessoas: 10, suco: "1L", refri: "1 Refrigerantes 1,5L", img: "/img/basico/10.jpeg" },
-  { pessoas: 15, suco: "1L", refri: "1 Refrigerantes 2L", img: "/img/basico/15.jpeg" },
-  { pessoas: 20, suco: "2L", refri: "1 Refrigerantes 2L", img: "/img/basico/20.jpeg" },
-  { pessoas: 25, suco: "2L", refri: "3 Refrigerantes 1,5L", img: "/img/basico/25.jpeg" },
-  { pessoas: 30, suco: "2L", refri: "2 Refrigerantes 1,5L", img: "/img/basico/30.jpeg" },
-  { pessoas: 40, suco: "3L", refri: "3 Refrigerantes 2L", img: "/img/basico/40.jpeg" },
-  { pessoas: 50, suco: "4L", refri: "4 Refrigerantes 2L", img: "/img/basico/50.jpeg" },
-  { pessoas: 70, suco: "6L", refri: "5 Refrigerantes 2L", img: "/img/basico/70.jpeg" },
-  { pessoas: 100, suco: "8L", refri: "8 Refrigerantes 2L", img: "/img/basico/100.jpeg" }
+  { pessoas: 10, suco: "1L", refri: "1 Refrigerantes 1,5L", img: "../img/basico/10.jpeg" },
+  { pessoas: 15, suco: "1L", refri: "1 Refrigerantes 2L", img: "../img/basico/15.jpeg" },
+  { pessoas: 20, suco: "2L", refri: "1 Refrigerantes 2L", img: "../img/basico/20.jpeg" },
+  { pessoas: 25, suco: "2L", refri: "3 Refrigerantes 1,5L", img: "../img/basico/25.jpeg" },
+  { pessoas: 30, suco: "2L", refri: "2 Refrigerantes 1,5L", img: "../img/basico/30.jpeg" },
+  { pessoas: 40, suco: "3L", refri: "3 Refrigerantes 2L", img: "../img/basico/40.jpeg" },
+  { pessoas: 50, suco: "4L", refri: "4 Refrigerantes 2L", img: "../img/basico/50.jpeg" },
+  { pessoas: 70, suco: "6L", refri: "5 Refrigerantes 2L", img: "../img/basico/70.jpeg" },
+  { pessoas: 100, suco: "8L", refri: "8 Refrigerantes 2L", img: "../img/basico/100.jpeg" }
 ];
 
 const precoPessoa = 19.90;
