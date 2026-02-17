@@ -1,4 +1,5 @@
 // js/firebase-init.js
+
 const firebaseConfig = {
   apiKey: "AIzaSyAmituB9652__9Asd3kVM2VJFTT-4sCWvE",
   authDomain: "mesa-completa.firebaseapp.com",
