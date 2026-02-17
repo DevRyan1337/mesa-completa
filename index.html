@@ -4,65 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mesa Completa Coffee Break</title>
+
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
   <!-- SEO BÁSICO -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mesa Completa Coffee Break - Coffee Break para Eventos</title>
-
-  <meta name="description" content="Buffet especializado em Coffee Break para eventos, empresas e celebrações. Sabores artesanais, apresentação impecável e atendimento personalizado.">
-  <meta name="keywords" content="coffee break, buffet, mesa completa, coffee break empresarial, coffee break para eventos, coffee break para empresas, coffee break gourmet">
+  <meta name="description" content="Buffet especializado em Coffee Break para eventos, empresas e celebrações. Sabores artesanais e apresentação impecável.">
+  <meta name="keywords" content="coffee break, buffet, mesa completa, coffee break empresarial, coffee break para eventos">
   <meta name="author" content="Ryan Morello - Ciber Guardians Services">
   <meta name="robots" content="index, follow">
 
-  <!-- Open Graph (para redes sociais) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Mesa Completa Coffee Break">
-  <meta property="og:description" content="Buffet especializado em Coffee Break para eventos e empresas. Transforme seus momentos com sabor e elegância.">
+  <meta property="og:description" content="Buffet especializado em Coffee Break para eventos e empresas. Transforme seus eventos com sabor e elegância.">
   <meta property="og:image" content="https://mesacompleta.com.br/img/banner.jpg">
   <meta property="og:url" content="https://mesacompleta.com.br">
   <meta property="og:type" content="website">
 
-  <!-- Ícone -->
   <link rel="icon" type="image/png" href="img/favicon.png">
-
-  <!-- Canonical URL -->
   <link rel="canonical" href="https://mesacompleta.com.br/">
-
-
 </head>
 
 <body>
 
-  <!-- Header -->
   <header class="header">
-    <img src="img/logo.png" alt="Logo Mesa Completa Coffee Break" class="logo" />
+    <img src="img/logo.png" alt="Logo Mesa Completa Coffee Break" class="logo">
     <h1 class="title">MESA COMPLETA</h1>
     <p class="subtitle">Coffee break</p>
   </header>
 
-
-      <!-- Carrossel de Imagens -->
+     <!-- Carrossel de Imagens -->
   <section class="carousel">
     <div class="carousel-container">
       <div class="slide fade">
-        <img src="img/basico/10.jpeg" alt="Coffee Break decorado" loading="lazy">
+        <img src="img/banner/1.jpg" alt="Coffee Break decorado" loading="lazy">
       </div>
       <div class="slide fade">
-        <img src="img/festa-completa/10.jpeg" alt="Mesa de doces e salgados" loading="lazy">
+        <img src="img/banner/2.jpeg" alt="Mesa de doces e salgados" loading="lazy">
       </div>
       <div class="slide fade">
-        <img src="img/premium/15.jpeg" alt="Buffet Mesa Completa" loading="lazy">
+        <img src="img/banner/3.jpeg" alt="Buffet Mesa Completa" loading="lazy">
       </div>
       <div class="slide fade">
-        <img src="img/basico/20.jpeg" alt="Coffee Break premium" loading="lazy">
+        <img src="img/banner/4.jpeg" alt="Coffee Break premium" loading="lazy">
       </div>
       <div class="slide fade">
-        <img src="img/pic nic/20.jpeg" alt="Mesa de doces e festa" loading="lazy">
+        <img src="img/banner/5.jpeg" alt="Mesa de doces e festa" loading="lazy">
       </div>
       <div class="slide fade">
-        <img src="img/premium/20.jpeg" alt="Buffet bascio" loading="lazy">
+        <img src="img/banner/6.jpeg" alt="Buffet bascio" loading="lazy">
       </div>
     </div>
 
@@ -80,19 +70,19 @@
       <span class="dot" onclick="currentSlide(6)"></span>
     </div>
   </section>
-
-
-  <!-- Hero Section -->
+  <!-- Hero Section (dinâmico via Firestore) -->
   <section class="hero">
-    <p class="slogan">Transforme seus eventos com<br><strong>sabor e elegância</strong></p>
+    <p class="slogan" id="titulo">Mesa Completa Coffee Break</p>
+    <p id="texto">Transforme seus eventos com sabor e elegância.</p>
   </section>
 
   <section class="cards">
+
     <div class="card">
-      <img src="img/premium/10.jpeg">
-      <h2>Especiais</h2>
-      <p>Opção ideal para pequenas reuniões e encontros corporativos.</p>
-      <a href="html/Especiais.html" class="btn">acesse nosso cardapio completo</a>
+      <img src="img/basico/25.jpeg" alt="Coffee Gourmet">
+      <h2>Basico</h2>
+      <p>Seleção especial de produtos premium e apresentação refinada.</p>
+      <a href="html/Basico.html" class="btn">acesse nosso cardapio completo</a>
     </div>
 
     <div class="card">
@@ -102,137 +92,111 @@
       <a href="html/Tradicional.html" class="btn">acesse nosso cardapio completo</a>
     </div>
 
-  <div class="card">
+    <div class="card">
+      <img src="img/premium/10.jpeg" alt="Especiais">
+      <h2>Especiais</h2>
+      <p>Opção ideal para pequenas reuniões e encontros corporativos.</p>
+      <a href="html/Especiais.html" class="btn">acesse nosso cardapio completo</a>
+    </div>
+
+    <div class="card">
       <img src="img/premium/15.jpeg" alt="Coffee Premium">
       <h2>Premium</h2>
       <p>Seleção especial de produtos premium e apresentação refinada.</p>
       <a href="html/Premium.html" class="btn">acesse nosso cardapio completo</a>
     </div>
 
-    <div class="card">
-      <img src="img/basico/10.jpeg" alt="Coffee Gourmet">
-      <h2>Basico</h2>
-      <p>Seleção especial de produtos premium e apresentação refinada.</p>
-      <a href="html/Basico.html" class="btn">acesse nosso cardapio completo</a>
-    </div>
-
   </section>
 
-    <section class="cards">
-
+  <section class="cards">
 
     <div class="card">
-      <img src="img/festa-completa/30.jpeg" alt="Mini Coffee Tradicional">
+      <img src="img/festa-completa/30.jpeg" alt="Festa Completa">
       <h2>Festa Completa</h2>
       <p>Opção ideal para pequenas reuniões e encontros corporativos.</p>
       <a href="html/Festa-Completa.html" class="btn">acesse nosso cardapio completo</a>
     </div>
 
     <div class="card">
-      <img src="img/tradicional/WhatsApp Image 2025-12-20 at 11.55.12.jpeg" alt="Coffee Completo">
-      <h2>Só Um Bolinho</h2>
-      <p>Cardápio variado e completo para eventos de médio porte.</p>
-      <a href="html/Só-Um-Bolinho.html" class="btn">acesse nosso cardapio completo</a>
-    </div>
-
-    <div class="card">
-      <img src="img/pic nic/25.jpeg" alt="Coffee Gourmet">
+      <img src="img/picnic-I/10.jpeg" alt="PicNic I">
       <h2>PicNic I</h2>
-      <p>Seleção especial de produtos premium e apresentação refinada.</p>
+      <p>Para momentos especiais com charme e praticidade.</p>
       <a href="html/PicNic-I.html" class="btn">acesse nosso cardapio completo</a>
     </div>
 
-        <div class="card">
-      <img src="img/pic nic/15.jpeg" alt="Mini Coffee Tradicional">
+    <div class="card">
+      <img src="img/picnic-II/20.jpeg" alt="PicNic II">
       <h2>PicNic II</h2>
-      <p>Opção ideal para pequenas reuniões e encontros corporativos.</p>
+      <p>Mais completo, com itens selecionados para experiências premium.</p>
       <a href="html/PicNic-II.html" class="btn">acesse nosso cardapio completo</a>
+    </div>
+
+    <div class="card">
+      <img src="img/so-um-bolinho/10.jpeg" alt="Só Um Bolinho">
+      <h2>Só Um Bolinho</h2>
+      <p>Ideal para pequenas comemorações e encontros rápidos.</p>
+      <a href="html/Só-Um-Bolinho.html" class="btn">acesse nosso cardapio completo</a>
     </div>
 
   </section>
 
-
-  <!-- Footer -->
   <footer class="footer">
-    <p>© 2025 Mesa Completa Coffee Break — Todos os direitos reservados</p>
+    <p>📦 Descartáveis inclusos</p>
+    <p>🚚 Entregamos no local — Consultar região</p>
+    <p>📞 Informações e reservas: (27) 99579-0841</p>
   </footer>
 
-  <!-- Google Analytics (para monitorar acessos) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <!-- Slider Script -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX'); /* Substitua pelo seu ID */
-  </script>
+  let slideIndex = 1;
+  let slideTimer = null;
 
-  <!-- Otimização de carregamento -->
-  <script>
-    // Adiciona lazy-loading em todas as imagens automaticamente
-    document.addEventListener("DOMContentLoaded", () => {
-      document.querySelectorAll("img").forEach(img => img.loading = "lazy");
-    });
-  </script>
-
-
-  <script>
-let slideIndex = 0;
-let slideTimer;
-
-function showSlides() {
-  const slides = document.getElementsByClassName("slide");
-  const dots = document.getElementsByClassName("dot");
-
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
 
-  slideIndex++;
-  if (slideIndex > slides.length) slideIndex = 1;
-
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
   }
 
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  function showSlides(n) {
+    const slides = document.getElementsByClassName("slide");
+    const dots = document.getElementsByClassName("dot");
 
-  slideTimer = setTimeout(showSlides, 4000); // muda a cada 4 segundos
-}
+    if (!slides.length) return;
 
-function plusSlides(n) {
-  clearTimeout(slideTimer);
-  showManualSlide(slideIndex += n);
-}
+    // Se n vier undefined (ex: primeira chamada), usa slideIndex atual
+    if (typeof n !== "number") n = slideIndex;
 
-function currentSlide(n) {
-  clearTimeout(slideTimer);
-  showManualSlide(slideIndex = n);
-}
+    if (n > slides.length) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
 
-function showManualSlide(n) {
-  const slides = document.getElementsByClassName("slide");
-  const dots = document.getElementsByClassName("dot");
+    for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+    for (let i = 0; i < dots.length; i++) dots[i].classList.remove("active");
 
-  if (n > slides.length) slideIndex = 1;
-  if (n < 1) slideIndex = slides.length;
+    slides[slideIndex - 1].style.display = "block";
+    if (dots[slideIndex - 1]) dots[slideIndex - 1].classList.add("active");
 
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    clearTimeout(slideTimer);
+    slideTimer = setTimeout(() => {
+      slideIndex++;
+      showSlides(slideIndex);
+    }, 4000);
   }
 
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-
-  slideTimer = setTimeout(showSlides, 4000);
-}
-
-document.addEventListener("DOMContentLoaded", showSlides);
+  document.addEventListener("DOMContentLoaded", () => {
+    showSlides(slideIndex); // ✅ chama com número
+  });
+  
 </script>
 
+
+  <!-- Firebase (conteúdo dinâmico) -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+  <script src="js/firebase-init.js"></script>
+  <script src="js/site.js"></script>
+  <script>carregarPagina("home");</script>
 
 </body>
 </html>

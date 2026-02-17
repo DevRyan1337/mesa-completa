@@ -1,7 +1,7 @@
 const pacotes = [
   { pessoas: 10, suco: "1L", refri: "1 Refrigerantes 1,5L", img: "../img/tradicional/10.jpeg" },
-  { pessoas: 15, suco: "1L", refri: "1 Refrigerantes 2L", img: "../img/tradicional/15.jpeg" },
-  { pessoas: 20, suco: "2L", refri: "1 Refrigerantes 2L", img: "../img/tradicional/20.jpeg" },
+  { pessoas: 15, suco: "1L", refri: "1 Refrigerantes 2L", img: "../img/tradicional/15.jpg" },
+  { pessoas: 20, suco: "2L", refri: "1 Refrigerantes 2L", img: "../img/tradicional/20.jpg" },
   { pessoas: 25, suco: "2L", refri: "3 Refrigerantes 1,5L", img: "../img/tradicional/25.jpeg" },
   { pessoas: 30, suco: "2L", refri: "2 Refrigerantes 1,5L", img: "../img/tradicional/30.jpeg" },
   { pessoas: 40, suco: "3L", refri: "3 Refrigerantes 2L", img: "../img/tradicional/40.jpeg" },

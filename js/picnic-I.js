@@ -7,7 +7,7 @@ const pacotes = [
   { pessoas: 40, suco: "3L", refri: "3 Refrigerantes 2L", img: "../img/picnic-I/40.jpeg" },
   { pessoas: 50, suco: "4L", refri: "4 Refrigerantes 2L", img: "../img/picnic-I/50.jpeg" },
   { pessoas: 70, suco: "6L", refri: "5 Refrigerantes 2L", img: "../img/picnic-I/70.jpeg" },
-  { pessoas: 100, suco: "8L", refri: "8 Refrigerantes 2L", img: "../img/picnic-I/100.jpeg" }
+  { pessoas: 100, suco: "8L", refri: "8 Refrigerantes 2L", img: "../img/picnic-I/100.png" }
 ];
 
 const precoPessoa = 19.90;

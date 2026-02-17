@@ -17,6 +17,11 @@
 
   <a href="../index.html" class="btn">Voltar ao Cardápio</a>
 
+  <section class="cms">
+    <h2 id="titulo"></h2>
+    <p id="texto"></p>
+  </section>
+
   <main class="cards" id="cards-container"></main>
 
   <footer class="footer">
@@ -26,5 +31,13 @@
   </footer>
 
   <script src="../js/picnic-I.js"></script>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+  <script src="../js/firebase-init.js"></script>
+  <script src="../js/site.js"></script>
+  <script>carregarPagina("picnic-i");</script>
+
 </body>
 </html>

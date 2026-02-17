@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Especiais – Mesa Completa Coffee Break</title>
 
-  <!-- CSS CORRETO -->
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -18,6 +17,11 @@
 
   <a href="../index.html" class="btn">Voltar ao Cardápio</a>
 
+  <section class="cms">
+    <h2 id="titulo"></h2>
+    <p id="texto"></p>
+  </section>
+
   <main class="cards" id="cards-container"></main>
 
   <footer class="footer">
@@ -26,7 +30,14 @@
     <p>📞 Informações e reservas: (27) 99579-0841</p>
   </footer>
 
-  <!-- JS CORRETO -->
   <script src="../js/especiais.js"></script>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+  <script src="../js/firebase-init.js"></script>
+  <script src="../js/site.js"></script>
+  <script>carregarPagina("especiais");</script>
+
 </body>
 </html>
