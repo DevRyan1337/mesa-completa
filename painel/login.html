@@ -4,24 +4,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login - Painel Mesa Completa</title>
+
+  <link rel="stylesheet" href="../js/painel.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <h2>Login Admin</h2>
+  <div class="panel">
+    <h1>Login Admin</h1>
+    <p>Entre para editar as páginas do site.</p>
 
-  <input type="email" id="email" placeholder="Email"><br><br>
-  <input type="password" id="senha" placeholder="Senha"><br><br>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="seuemail@exemplo.com" />
+    </div>
 
-  <button id="btnEntrar">Entrar</button>
+    <div class="field">
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" placeholder="••••••••" />
+    </div>
 
-  <!-- Firebase SDK (compat) -->
+    <div class="row">
+      <button class="btn" id="btnEntrar">Entrar</button>
+    </div>
+
+    <div class="notice" id="msg"></div>
+  </div>
+
+  <!-- Firebase SDK -->
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
 
-  <!-- Init + Painel -->
+  <!-- Init -->
   <script src="../js/firebase-init.js"></script>
-  <script src="../js/painel.js"></script>
 
+  <script>
+    const msg = document.getElementById("msg");
+
+    auth.onAuthStateChanged(user => {
+      if (user) location.href = "dashboard.html";
+    });
+
+    document.getElementById("btnEntrar").addEventListener("click", async () => {
+      msg.textContent = "";
+      const email = document.getElementById("email").value.trim();
+      const senha = document.getElementById("senha").value;
+
+      try {
+        await auth.signInWithEmailAndPassword(email, senha);
+        location.href = "dashboard.html";
+      } catch (e) {
+        msg.textContent = "Erro: " + e.message;
+      }
+    });
+  </script>
 </body>
 </html>
